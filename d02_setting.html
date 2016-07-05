@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ko-kr">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<style>
+		body {background-color:#fbb; color:#123}
+		h1 {color:#333; text-decoration: underline;}
+		p {color:#0af; border-bottom:1px dotted #000;}
+		#vs {color: #f00;}
+	</style>	
+</head>
+<body>
+<h1>비교</h1>
+	<p>자바 &amp; 자바스크립트</p>
+	<pre>자바    자바스크립트</pre>
+	<p id="vs">1 &gt; 2 &gt; 3 </p>
+	<ol>
+		<li>같다</li>		
+		<li>다르다</li>		
+		<li>모른다</li>
+	</ol>
+	<button type="button" id="btn">버튼</button>
+ <script>
+	 var body = document.body;
+	var btn = body.querySelector('#btn');
+	 btn.addEventListener('click', color);
+	 
+	 function color(){
+		 body.style.backgroundColor = '#777';
+	 };
+	
+</script>
+</body>
+</html>
