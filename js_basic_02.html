@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta charset="UTF-8">
+	<title>javascript_기초변수</title>
+
+</head>
+<body>
+<h1>javascript 기초익히기</h1>
+<p>변수/ 자료형</p>
+	<script>
+		//변수란? 변하는 값, 어떠한 이름에 데이타를 저장하는것
+		
+		var box, box1  //호이스트, 호이스트란 변수의 저의가 그 범위에 따라 선언과 할당으로 분리되는것,
+		//이에 선언되는 변수는 움직일수 있는 범위의 최 상단으로 이동되면, 값을 할당하는것은 해당위치에서 다시 진행
+		/**
+		*변수 이름짓는 방법:
+		*1.영어
+		*2.띄어쓰기 금지 (언더바 사용,혹은 뒤단어 첫글자를 대문자)
+		*3.너무 단축하지 말것(적당히 풀어서 이해하도록)
+		*4.예약어(이미 자바에서 사용중인 이름) 사용금지
+		*5. 함수의 이름 첫글자를 대문자로 권장
+		*6. 상수(변하지 않는값)눈 모두 대문자로 권장*/
+		
+		box = 123+5;
+		box1 = '123';
+		
+		//document.write(box);
+		//document.write(box1);
+		
+		box = box + box1;
+		document.write(box);
+		
+	</script>
+	
+</body>
+</html>
