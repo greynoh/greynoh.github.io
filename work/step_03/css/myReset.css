@@ -1,0 +1,8 @@
+html, body{margin:0; font-family: sans-serif; 
+	line-height:1.15; font-size:100%;}
+
+h1,h2,h3,h4,h5,h6,p,div,table,tr,td,th{margin:0;}
+ul,ol,li{list-style: none;padding: 0;}
+a{text-decoration: none; color:#555;}
+a:hover{font-weight:bold;color:#07f;}
+header, article, aside, nav, footer, section, main{display:block} 

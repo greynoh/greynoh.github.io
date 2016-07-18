@@ -1,6 +1,0 @@
-html, body{margin: 0 ;padding: 0;}
-		h1, h2, h3, h4, h5, h6, p, div, ul, ol, li, dl, dt, dd, table {margin: 0; color:#333;}
-		ul, ol, li{list-style: none;}
-		a{text-decoration: none; color:#777;}
-		a:hover{text-decoration:underline; color:#0ac;}
-		header, article, aside, nav, footer, section, hgroup, main{display:block;}
