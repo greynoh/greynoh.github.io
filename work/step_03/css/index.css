@@ -4,8 +4,7 @@
 .container>*{width: 100%;}
 	/* #headBox */
 	#headBox a:focus{outline: 0; border-bottom:2px solid #fa0;}
-	#headBox{height:40px; background-color: #707070; padding-top:12px; padding-bottom:10px; 
-		box-sizing: border-box; position: relative;}
+	#headBox{height:40px; background-color: #707070; padding-top:12px; padding-bottom:10px; ;}
 	#headBox>h1{width: 94px; height: 18px; float: left; background-color: #fff;}
 	#headBox>h1>a{width: 100%; height: 100%; display: block;}
 	#headBox>h1 img{width:100%; height:auto; border:0;}
@@ -24,15 +23,8 @@
 	#gnb>ul a{width: 100%; height: 100%; display: block;}
 	#gnb>ul>li img{width:100%; height:auto;}
 	
-	/* .head_bg:배경이미지처리 
-	.head_bg{width: 100%;height:40%;background-color: #afc;
-		position:absolute; top:0;left:0; z-index: -100%;}*/
 
-    #headBox:after{content:""; display:block; width: 100vw; height:inherit; background-color: inherit;
-		position: absolute; top:0; left:50%; margin-left:-50vw; z-index:-100;}
-
-
-
+    
 
 	/* #lnb  */
 	#lnb{height:114px; padding: 20px 0;background-color: #fff; border-bottom: 1px solid #d3d3d3;
@@ -66,10 +58,25 @@
 			.best_product>a{width: 100%;height: 100%; display:block;
 			background-image:url("../img/content/con_03.png") ;
 			background-repeat: no-repeat; background-position: center;}
-		.promotion{width: 100%; height:280px ; background-color: #fac;}
-			.reservation{}
-			.e_shop{}
-			.store_location{}
-	#fnb{height:276px; background-color: #e8e8e8;}
-	#footBox{height:80px; background-color: #707070;}
+		.promotion{width: 100%; height:280px ;}
+		.promotion_package{width: 328px; height: auto; float: left;}
+			.reservation{width: 328px; height: 146px;  margin-bottom: 10px;}
+			.e_shop{width: 328px; height: 125px;}
+			.store_location{width: 664px;height: 280px;  float: right;}
+		.reservation{background-image: url("../img/content/con_04.png");}
+		.e_shop{background-image: url("../img/content/con_05.png");}
+		.store_location{background-image: url("../img/content/con_06.png");}
 
+
+	#fnb{height:276px; background-color: #e8e8e8;}
+	#footBox{height:80px;padding: 14px 0;background-color: #707070;}
+	
+	#footBox>h2{width: 86px; height: 100%; background-repeat: no-repeat; float: left;
+		background-image: url("../img/footBox/footBox_logo.png");}
+	#footBox>address{width: 800px; height: 100%;color: #fff; font-style: normal;
+		font-size: 1em;margin-left: 35px; float: left;}
+	#footBox>address>p{line-height: 1.5626em;float: left; letter-spacing:-1px;}
+	#footBox>address>p:first-child{margin-right: 1em;}
+	#footBox>address>p>a{color:inherit; border-right:1px solid #fff; padding-right:0.5em;}
+	#footBox>address>p>a:hover{font-weight:normal; text-decoration:underline;}
+	#footBox>address>p>a:last-child{border-right:0; padding-right:; }
