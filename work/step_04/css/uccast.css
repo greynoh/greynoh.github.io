@@ -1,0 +1,54 @@
+.container{width: 1000px; height: auto; margin: 0 auto;}
+.container > *{width: 100%;}
+	#headBox{height: 141px; }
+	#headBox>h1{width: 130px; height: 33px; margin-left: 6px; margin-bottom: 40px; float: left; padding-top: 24px;}
+	#headBox>h1>a{width: 100%; height: 100%; display: block;}
+	#headBox>h1 img{width:100%; height:auto; border:0;}
+	#unb{width: 480px; height: 9px;float:right;padding-top: 24px;}
+	#unb>ul{width: 100%; height: 100%;}
+	#unb>ul>li{height: 100%; float: left; margin-right:24px; }
+	#unb>ul>li.unb_1{width: 86px;}
+	#unb>ul>li.unb_2{width: 111px;}
+	#unb>ul>li.unb_3{width: 29px;}
+	#unb>ul>li.unb_4{width: 28px;}
+	#unb>ul>li.unb_5{width: 60px;}
+	#unb>ul>li.unb_6{width: 44px; margin-right: 0;}
+
+	#gnb{width: 1001px; height: 13px;float: left;}
+
+	#gnb>ul{width: 100%; height: 100%;}
+	#gnb>ul>li{height: 100%; float: left; margin-right:74px; }
+	#gnb>ul>li.gnb_1{width: 66px;}
+	#gnb>ul>li.gnb_2{width: 70px;}
+	#gnb>ul>li.gnb_3{width: 106px;}     
+	#gnb>ul>li.gnb_4{width: 78px;}
+	#gnb>ul>li.gnb_5{width: 81px;}
+	#gnb>ul>li.gnb_6{width: 106px;}
+	#gnb>ul>li.gnb_7{width: 50px; margin-right: 0;}
+
+	/*#lnb{width: 55px; height: 946px; background-color: #ccc; float: right; z-index: 100}*/
+
+	#addBanner{width: 1903px; height: 601px; background-image: url(../img/section/addBanner_01.png); 
+		margin-left: -50%; background-repeat: no-repeat; background-position: center;}
+
+	#content{width: 100%;height: 326px;padding-top: 50px; padding-bottom: 30px;}
+	
+	#content>ul>li{height: 100%; margin-right: 10px; margin-bottom: 30px; float: left;}
+	.content_1{width: 190px; height: 93px;}
+	.content_2{width: 190px; height: 93px;}
+	.content_3{width: 190px; height: 93px;}
+	.content_4{width: 190px; height: 93px;}
+	.content_5{width: 190px; height: 93px; margin-right: 0;}
+	.content_6{width: 190px; height: 93px;}
+	.content_7{width: 190px; height: 93px;}
+	.content_8{width: 190px; height: 93px;}
+	.content_9{width: 190px; height: 93px;}
+	.content_10{width: 190px; height: 93px; margin-right: 0;}
+
+	#content>ul a{width: 100%; height: 100%; display: block;}
+	#content>ul>li img{width:100%; height:auto;}
+	
+
+	#fnb{height: 322px; background-color: #565;}
+
+	#footBox{height: 531px; background-color: #456;}                     
