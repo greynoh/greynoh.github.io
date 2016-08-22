@@ -38,3 +38,4 @@ header, article, aside, nav, footer,section, main{display: block;}
 		position: absolute; top: 0; left:50%; margin-left: -50vw; z-index: -100; 
 		background: inherit;}
 .clearfix:after, .cf:after{content:""; display:block; clear:both;}
+ 
