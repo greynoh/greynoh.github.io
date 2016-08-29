@@ -1,0 +1,22 @@
+$(function(){
+  $('.main-slides').bxSlider();
+  $('.ediya_menu').bxSlider({
+    pager:false,
+    nextSelector:'#row2Next',
+    prevSelector:'#row2Prev',
+    minSlides:3,
+    maxSlides:3,
+    slideWidth:155,
+    slideMargin:0,
+    moveSlides:1
+  });
+  
+  $('.ediya-banner').bxSlider({
+    pager:false,
+    minSlides:3,
+    maxSlides:3,
+    slideWidth:320,
+    slideMargin:0,
+    moveSlides:1
+  });
+});

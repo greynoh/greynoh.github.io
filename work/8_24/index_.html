@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>NHN Corp</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="dist/jquery.bxslider.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script src="dist/jquery.min.js"></script>
+  <script src="dist/jquery.bxslider.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="dist/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="wrap">
+    <div class="header">
+       <div class="inner-container clearfix">
+         <h1 class="logo"><a href="">네이버로고</a></h1>
+         <ul class="gnb clearfix">
+           <li class="one-depth"><a href="">네이버</a>
+             <ul>
+               <li><a href="">서브메뉴1-1</a></li>
+               <li><a href="">서브메뉴1-2</a></li>
+               <li><a href="">서브메뉴1-3</a></li>
+               <li><a href="">서브메뉴1-4</a></li>
+               <li><a href="">서브메뉴1-5</a></li>
+               <li><a href="">서브메뉴1-6</a></li>
+               <li><a href="">서브메뉴1-7</a></li>
+               <li><a href="">서브메뉴1-8</a></li>
+               <li><a href="">서브메뉴1-9</a></li>
+             </ul>
+           </li>
+           <li class="one-depth"><a href="">서비스</a>
+             <ul>
+               <li><a href="">서브메뉴2-1</a></li>
+               <li><a href="">서브메뉴2-2</a></li>
+               <li><a href="">서브메뉴2-3</a></li>
+             </ul>
+           </li>
+           <li class="one-depth"><a href="">홍보</a>
+             <ul>
+               <li><a href="">서브메뉴3-1</a></li>
+               <li><a href="">서브메뉴3-2</a></li>
+               <li><a href="">서브메뉴3-3</a></li>
+               <li><a href="">서브메뉴3-4</a></li>
+             </ul>
+           </li>
+           <li class="one-depth"><a href="">IR</a>
+             <ul>
+               <li><a href="">서브메뉴4-1</a></li>
+               <li><a href="">서브메뉴4-2</a></li>
+               <li><a href="">서브메뉴4-3</a></li>
+               <li><a href="">서브메뉴4-4</a></li>
+               <li><a href="">서브메뉴4-5</a></li>
+               <li><a href="">서브메뉴4-6</a></li>
+               <li><a href="">서브메뉴4-7</a></li>
+               <li><a href="">서브메뉴4-8</a></li>
+               <li><a href="">서브메뉴4-9</a></li>
+             </ul>
+           </li>
+           <li class="one-depth"><a href="">채용</a></li>
+         </ul>
+       </div>
+      
+      <!--
+      .inner-container>h1.logo>a>{네이버로고}^^ul.gnb>li.one-depth*5>a-->
+    </div>
+    <div class="container">
+      <div class="nhn-slides">
+        <div id="mainSlides">
+          <div class="item item1"></div>
+          <div class="item item2"></div>
+          <div class="item item3"></div>
+        </div>
+        <div id="myPager" class="hide">
+          <a href="" data-slide-index="0">0</a>
+          <a href="" data-slide-index="1">1</a>
+          <a href="" data-slide-index="2">2</a>
+        </div>
+      </div>  
+      <div class="inner-container clearfix">
+       <div class="news">네이버 뉴스</div>
+       <div class="news-contents">
+         <ul class="news-text">
+           <li><a href="">네이버, 창작자와 스몰비즈니즈가 오프라인에서 새로운 방식으로 대중을 만날 수 있는 다양한 프로그램 마련</a></li>
+           <li><a href="">'네이버뉴스 편집자문위원회' 제3기 발족</a></li>
+           <li><a href="">네이버 D2SF, 테크 스타트업 'widevantage(와이드벤티지)' 신규 투자</a></li>
+           <li><a href="">네이버, 총 133개국에 출시된 게임 ‘마음의 소리’ 글로벌 버전에 '네이버 카페 SDK' 적용</a></li>
+           <li><a href="">네이버 그라폴리오, 서울와우북페스티벌과 함께 창작 그림책 챌린지 개최</a></li>
+         </ul> 
+       </div>
+       <div class="my-controls">
+           <span id="nhn-prev"></span>
+           <span id="nhn-next"></span>
+       </div>
+        
+        
+        
+        
+        
+        
+      </div>
+    </div>
+    <div class="footer"></div>
+  </div>
+  <script src="js/nhn-gnb.js"></script>
+  <script>
+  $(function(){
+    $('#mainSlides').bxSlider({
+      mode:'fade',
+      speed:700,
+      controls:false,
+      // pagerCustom:'#myPager',
+      auto:true
+    });
+    $('.news-text').bxSlider({
+      pager:false,
+      nextSelector:'#nhn-next',
+      prevSelector:'#nhn-prev',
+      speed:1,
+      auto:true,
+      pause:3000
+    });
+    $('#nhn-prev a').html('<i class="material-icons">navigate_before</i>')
+    $('#nhn-next a').html('<i class="material-icons">navigate_next</i>')
+    
+  })
+  </script>
+</body>
+</html>
+
+
+
+
+
+

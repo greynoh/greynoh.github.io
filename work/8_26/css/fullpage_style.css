@@ -1,0 +1,15 @@
+@charset "utf-8";
+body,ul,li,h1,h2{margin: 0;padding: 0;}
+img{border: 0;}
+a{text-decoration: none;}
+
+.fp-tableCell{vertical-align: top;}
+.page0{background-color: lime;}
+.page1{background-color: teal;}
+.page2{background-color: beige;}
+.page3{background-color: cornflowerblue;}
+.page4{background-color: violet;}
+
+.inner{width: 960px;margin: auto;}
+
+#iphone3{position: absolute;top: 100px;left: 0;}

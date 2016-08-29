@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    body,div,ul,li,h1,h2{margin: 0;padding: 0;}
+    .inner-container{width: 960px;margin:0 auto;}
+    .section{height: 600px;}
+    .sec1{background-color: #184764;}
+    .sec2{background-color: #313131;}
+    .sec3{background-color: #1B83B3;}
+    .sec4{background-color: #5AA3C4;}
+    .sec5{background-color: #BCE1F1;}
+    .gnb-menu{width: 100%;background-color: #fff;padding: 10px 0;}
+    .gnb-menu a{display: inline-block;padding: 0 1em;text-decoration: none;color: #222;font-weight: bold;}
+    .gnb-menu a.active{color: #f00;}
+  </style>
+  <script src="dist/jquery.min.js"></script>
+  <script src="dist/jquery.smint.js"></script>
+</head>
+<body>
+  <div class="wrap">
+    <div class="gnb-menu">
+      <div class="inner-container">
+        <a href="#sec1">SECTION 1</a>
+        <a href="#sec2">SECTION 2</a>
+        <a href="#sec3">SECTION 3</a>
+        <a href="#sec4">SECTION 4</a>
+        <a href="#sec5">SECTION 5</a>
+      </div>
+    </div>
+    <div class="section sec1">
+      <div class="inner-container">
+        <h1>section 1</h1>
+      </div>
+    </div>
+    <div class="section sec2">
+      <div class="inner-container">
+        <h1>section 2</h1>
+      </div>
+    </div>
+    <div class="section sec3">
+      <div class="inner-container">
+        <h1>section 3</h1>
+      </div>
+    </div>
+    <div class="section sec4">
+      <div class="inner-container">
+        <h1>section 4</h1>
+      </div>
+    </div>
+    <div class="section sec5">
+      <div class="inner-container">
+        <h1>section 5</h1>
+      </div>
+    </div>
+  </div>
+  <script>
+  $(function(){
+    $('.gnb-menu').smint();
+  })
+  </script>
+</body>
+</html>
+
+
+
+
+

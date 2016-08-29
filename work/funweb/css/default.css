@@ -10,7 +10,7 @@ body{background-color: #898989;
  		margin: 0 auto;
  		background-image: url(../image/shadow.png);
  		background-repeat: repeat-y;
- 		min-height: 780px;}
+ 		min-height: 850px;}
 
 #logo{width: 265px; margin-top: 60px; margin-left: 40px;float: left;}
 
@@ -25,8 +25,8 @@ header{height: 151px; margin: 0 auto;}
 
 nav#top_menu{width: 600px; margin-top: 50px; margin-left: 20px; float: right;}
 nav#top_menu ul{list-style: none; 
-		font-family: Verdana, Geneva, sans-serif;
-		font-size: 13px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 13px;
 		font-weight: 100;
 		color:#333;}
 nav#top_menu ul li{float: left; margin: 0 5px;}
@@ -39,10 +39,42 @@ nav#top_menu a:hover{background-image: url(../image/blue.gif); background-repeat
 			background-position: center top;}
 #main_img img{margin-top: 2px;}
 
-article#front{margin:5px 0 5px 0;}
+article#front{height: 350px;margin:5px 0 5px 0;}
 #solution{width: 910px; min-height: 150px; background-color: #ebebeb;
 		border:1px solid #fff; border-radius: 10px; padding: 10px; margin-left: 19px;}
 #hosting, #security, #payment{width: 261px; float: left; padding: 10px; margin-left: 17px;}
+
+#sec_news, #news_notice{float: left; width: 420px; margin: 15px 0 0 20px;}
+#sec_news h3, #news_notice h3{font-family: seo; font-size: 14px; font-style: italic;
+							font-weight: normal; width: 420px;height: 24px;
+							background-image: url(../image/h3_back.jpg);
+							background-repeat: no-repeat; padding: 5px 0 0 22px; color:#f26522;}
+#sec_news{margin-left: 30px;}
+#sec_news dl{margin-left: 6px; }
+#sec_news dt{font-family:"Times New Roman", Times, serif ; font-size: 16px; margin: 5px 0; color:#f00;}
+#sec_news dd{margin-left: 0; color:#333;}
+#sec_news dt a{color:#f00; text-decoration: none;}
+#sec_news dt a:hover{color:#f90; text-decoration: underline;}
+#sec_news dd a{color:#333; text-decoration: none;}
+#sec_news dd a:hover{color:#f90; text-decoration: underline;}
+#news_notice{margin-left: 60px;}
+#news_notice table{width: 400px; border-collapse: collapse; text-align: center;}
+#news_notice td{padding:6px 4px; border-bottom: 1px dotted #999;}
+#news_notice td.contxt{background-image: url(../image/tr_back.gif);
+						background-repeat: no-repeat; background-position: left center;
+						padding-left: 15px; text-align: left; color:#333;}
+#news_notice a{color:#333; text-decoration: none;}
+#news_notice a:hover{color:#f90;text-decoration: none;}
+
+footer{margin: 50px 0 0 0; height: 80px; background-image: url(../image/under_logo.gif);
+	background-repeat: no-repeat; background-position: 40px center;}
+footer hr{width: 900px; margin: 0 0 10px;}
+footer #copy{width:450px; font-family:seo;  margin: 20px 0 0 190px; float: left;}
+footer #social{width: 130px; margin: 20px 20px 0 0; float: right;}
+footer #social img{margin: 0 7px;}
+
+
+
 
 @font-face{font-family: "seo";
 			src:url(../image/segoeui.woff) format("woff");}
@@ -56,5 +88,5 @@ article#front{margin:5px 0 5px 0;}
 		background-repeat: no-repeat; background-position: left 15px;}
 #payment{background-image: url(../image/icon3.png);
 		background-repeat: no-repeat; background-position: left 15px;}
-#hosting, #security{border-right: 1px solid #333;}
- 			
+#hosting, #security{border-right: 1px solid gray;}
+

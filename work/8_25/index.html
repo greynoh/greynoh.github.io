@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    body,div,ul,li{margin:0 ;padding: 0;}
+    .align-center{text-align: center;}
+    .box{width: 1000px;height: 150px;border: 5px dashed #f3f;margin:0 auto;padding: 20px 0;overflow: hidden;}
+    .sliding{position: relative;}
+    .img-container{position: absolute;top: 0;left: -250px;width: 1600px;}
+    .img-container:after{display: block;clear: both;content: '';}
+    .img-container img{float: left;opacity:1;}
+  </style>
+  <link rel="stylesheet" href="dist/bxslider.css">
+  <script src="dist/jquery.min.js"></script>
+  <script src="dist/bxslider.min.js"></script>
+</head>
+<body>
+  <div class="box">
+    <ul class="bx-img">
+      <li><img src="imgs/0.jpg" alt=""></li>
+      <li><img src="imgs/1.jpg" alt=""></li>
+      <li><img src="imgs/2.jpg" alt=""></li>
+      <li><img src="imgs/3.jpg" alt=""></li>
+      <li><img src="imgs/4.jpg" alt=""></li>
+      <li><img src="imgs/5.jpg" alt=""></li>
+    </ul>
+  </div>
+  
+  <div class="box">
+    <div class="sliding">
+      <div class="img-container">
+        <img src="imgs/5.jpg" alt="">
+        <img src="imgs/0.jpg" alt="">
+        <img src="imgs/1.jpg" alt="">
+        <img src="imgs/2.jpg" alt="">
+        <img src="imgs/3.jpg" alt="">
+        <img src="imgs/4.jpg" alt=""> 
+      </div>
+    </div>
+  </div>
+  <div class="align-center">
+    <button class="prev">이전</button>
+    <button class="next">다음</button>
+  </div>
+  <script>
+    $(function(){
+      
+      
+      $('.prev').on('click',function(){
+        $('.img-container').animate({
+          left:0
+        },function(){
+          $('.img-container img:last').prependTo($('.img-container'))
+          $('.img-container').css({left:-250})
+        })
+      })
+      
+      $('.next').on('click',function(){
+        $('.img-container').animate({
+          left:-500
+        },function(){
+          $('.img-container img:first').appendTo($('.img-container'))
+          $('.img-container').css({left:-250})
+        })
+      });
+      
+      
+      $('.bx-img').bxSlider({
+        pager:false,
+        minSlides:4,
+        maxSlides:4,
+        slideMargin:0,
+        slideWidth:250,
+        moveSlides:1
+      });
+    })
+  
+  </script>
+</body>
+</html>
+
+

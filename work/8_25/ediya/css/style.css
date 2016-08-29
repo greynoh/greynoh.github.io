@@ -1,0 +1,24 @@
+body,div,ul,li,h1,h2{margin: 0;padding: 0;}
+img{border: 0}
+a{text-decoration: none;}
+
+.ediya-wrap{width: 960px;margin:0 auto;}
+.row{margin-bottom: 30px;}
+
+.row1{}
+.row2{}
+.row2:after{display: block;clear: both;content: '';}
+.ediya_menu li a{display: block;}
+.ediya_menu li a img{margin:0 auto;}
+.row2-box{width: 465px;float: left;}
+.row2-box.ediya-menu-wrap{width:415px ;margin: 0 55px 0 25px;}
+.row3{}
+
+.main-slides-wrap{width: 719px;}
+
+.ediya_menu{}
+.ediya-banner{}
+
+#row2Next .bx-next{display: block;width: 24px;height: 24px;text-indent: -9999px;background-image: url(../images/img_arrowbtn_right2.jpg);}
+
+

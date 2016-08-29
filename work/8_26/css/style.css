@@ -1,0 +1,18 @@
+@charset "utf-8";
+body,ul,li,h1,h2{margin: 0;padding: 0;}
+img{border: 0;}
+a{text-decoration: none;}
+
+.header{position: fixed;width: 100%;background-color: #fff;border-bottom: 5px solid #00f;}
+.gnb{list-style: none;padding: 15px 0;width: 960px;margin:0 auto;}
+.gnb:after{display: block;clear: both;content: '';}
+.gnb li{float: left;}
+.gnb a{display: block;height:30px;line-height: 30px;padding:0 1em ;color: #000;font-weight: bold;}
+.gnb .on a{color:#f00;}
+.section{}
+.section0{padding-top: 65px;background-color: #2C3A3A;height: 500px;}
+.section1{background-color: #E9E8E8;height: 600px;}
+.section2{background-color: #97CB35;height: 575px;}
+.section3{background-color: #fff;height: 400px;}
+.section4{background-color: #4285F4;height: 600px;}
+.footer{background-color: #333;height: 350px;}

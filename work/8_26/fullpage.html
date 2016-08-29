@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="dist/jquery.fullpage.css">
+  <link rel="stylesheet" href="css/fullpage_style.css">
+  <script src="dist/jquery.min.js"></script>
+  <script src="dist/jquery.fullpage.min.js"></script>
+</head>
+<body>
+  <div id="fullpage">
+    <div class="section page0">
+      <div class="inner">
+        <h1>section 0</h1>
+      </div>
+    </div>
+    <div class="section page1">
+      <div class="inner">
+        <h1>section 1</h1>
+        <img src="images/iphone3.png" alt="" id="iphone3">
+      </div>
+    </div>
+    <div class="section page2">
+      <div class="inner">
+        <h1>section 2</h1>
+      </div>
+    </div>
+    <div class="section page3">
+      <div class="inner">
+        <h1>section 3</h1>
+      </div>
+    </div>
+    <div class="section page4">
+      <div class="inner">
+        <h1>section 4</h1>
+      </div>
+    </div>
+  </div>
+  <script>
+  $(function(){
+    $('#fullpage').fullpage({
+      navigation:true,
+      afterLoad: function(anchorLink, index){
+        if(index==2){
+          $('#iphone3').animate({
+            left:350
+          })
+        }
+        else{
+          $('#iphone3').css({left:0})
+        }
+      }
+    });
+  })
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

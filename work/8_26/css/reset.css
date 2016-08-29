@@ -1,0 +1,13 @@
+body,div,ul,li,h1,h2,h3,h4,h5,h6{margin: 0;padding: 0;}
+img{border: 0;}
+a{text-decoration: none;}
+
+.clearfix:after{display: block;clear: both;content: '';}
+
+
+.wrap{width: 940px;margin:0 auto;}
+.item{display: none;}
+.item.on{display: block;}
+.tab{padding:5px 0;}
+.tab a{display: inline-block;padding: 0.25em 0.5em;color: #333;font-weight: bold;}
+.tab a.on{background-color:teal;color: #fff;}

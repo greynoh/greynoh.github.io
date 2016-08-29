@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    .hong{margin-bottom: 0px;}
+    .hong:after{display: block;clear: both;content: '';}
+    .hong .child {background-color: #f3f;width:100px ;height: 100px;margin: 10px;float: left;}
+    #gildong{margin: 10px 0;width: 100px;height: 100px;background-color: #3ff;}
+  </style>
+  <script src="dist/jquery.min.js"></script>
+</head>
+<body>
+  
+  <div class="hong">
+    <div class="child child1">홍 일</div>
+    <div class="child child2">홍 이</div>
+    <div class="child child3">홍 삼</div>
+    <div class="child child4">홍 사</div>
+  </div>
+  <div class="child" id="gildong">길동</div>
+  
+
+
+
+<!--  // append()
+      // prepend()
+      // appendTo()
+      // prependTo()
+      // after()
+      // before() -->
+  <script>
+  $(function(){
+    $('#gildong').click(function(){
+
+      $(this).prependTo($('.hong')) 
+    })
+    
+  })
+  </script>
+</body>
+</html>
+
+
+
